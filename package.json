@@ -1,0 +1,25 @@
+{
+  "name": "load-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "docker run -i loadimpact/k6 run - <dist/run.js",
+    "postinstall": "docker pull loadimpact/k6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesadarich/load-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesadarich/load-testing/issues"
+  },
+  "homepage": "https://github.com/jamesadarich/load-testing#readme",
+  "devDependencies": {
+    "@types/k6": "^0.30.0",
+    "typescript": "^4.2.3"
+  }
+}
