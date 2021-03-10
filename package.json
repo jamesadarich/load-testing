@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "docker run -i loadimpact/k6 run - <dist/run.js",
+    "pretest": "tsc",
+    "test": "k6 run dist/run.js",
     "postinstall": "docker pull loadimpact/k6"
   },
   "repository": {
